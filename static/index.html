@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>PassItOn - Campus Exchange, Reimagined</title>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Quicksand"', 'sans-serif'],
+          },
+          colors: {
+            brand: '#A18CD1',      // Pastel Purple
+            brandDark: '#8F75C5',
+            brandSoft: '#F3EFFF',
+            coral: '#FFB8B8',      // Pastel Peach/Pink
+            coralSoft: '#FFEBEB',
+            mint: '#B8E9D5',       // Pastel Mint
+            mintSoft: '#E6F8F0',
+            blue: '#AECBFA',       // Pastel Blue
+            ink900: '#2D3142',     // Soft dark navy instead of black
+            ink700: '#4F5D75',
+            ink400: '#9098A9',
+            ink200: '#E1E5ED',
+            ink100: '#F4F6F9',
+            ink50: '#FAFBFD',
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Google Fonts for Pastel aesthetic -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- React 18 & ReactDOM -->
+  <script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
+
+  <!-- Babel Standalone for JSX -->
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/static/styles.css" />
+</head>
+<body class="bg-[#0E0E12] text-[#101014] antialiased selection:bg-[#6C5CE7] selection:text-white">
+  <div id="root"></div>
+
+  <!-- React Application Source -->
+  <script type="text/babel" src="/static/app.js"></script>
+</body>
+</html>
